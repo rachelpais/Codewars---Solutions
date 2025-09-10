@@ -86,3 +86,26 @@ A quick reference guide for common Python functions, operations, and concepts.
 | Parameter | Variable in the function definition, a placeholder | `def greet(name):` → `name` is the parameter |
 | Argument  | Actual value passed to the function when calling it | `greet("Alice")` → `"Alice"` is the argument |
 | Usage     | Can be used inside the function to perform operations | `"Hello " + name` → concatenates "Hello " with the parameter value |
+
+---
+## 8. Loops
+
+| Loop Type | Description | Example |
+|-----------|------------|---------|
+| `for`     | Repeats code for each item in a sequence | `for i in [1,2,3]: print(i)` → 1, 2, 3 |
+| `range()` | Generates a sequence of numbers | `for i in range(5): print(i)` → 0,1,2,3,4 |
+| `while`   | Repeats code while a condition is True | `x=0`<br>`while x<3:`<br>`  print(x)`<br>`  x+=1` → 0,1,2 |
+
+---
+## 9. String Methods
+
+| Method | Description | Example |
+|--------|------------|---------|
+| `.upper()` | Converts text to uppercase | `"hi".upper() → "HI"` |
+| `.lower()` | Converts text to lowercase | `"HI".lower() → "hi"` |
+| `.split()` | Splits a string into a list | `"a b c".split() → ['a','b','c']` |
+| `.join()`  | Joins a list into a string | `",".join(['a','b','c']) → "a,b,c"` |
+| `.replace(old,new)` | Replaces part of a string | `"Hello".replace("H","J") → "Jello"` |
+| `.strip()` | Removes spaces from start/end | `"  hi  ".strip() → "hi"` |
+
+
