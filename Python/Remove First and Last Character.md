@@ -10,9 +10,13 @@ The function should handle strings of any length ≥ 2 characters. For strings w
 ### **Examples** 
 
 'eloquent' --> 'loquen'
+
 'country'  --> 'ountr' 
+
 'person'   --> 'erso'
+
 'ab'       --> '' (empty string)
+
 'xyz'      --> 'y'
 
 ### **Requirements**
