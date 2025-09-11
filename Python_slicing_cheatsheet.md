@@ -77,3 +77,65 @@ lst = [1,2,3,4,5]
 lst[1:-1] # [2,3,4]
 lst[::-1] # [5m,4,3,2,1]
 lst[:2] + lst[3:] #1,2,,4,5
+```
+
+## Detecting Palindrome word (a word that reads the same backwards)
+```python
+word = "radar"
+if word == word[::-1]:
+   print(f"{word} is a plaindrome!")
+else:
+   print(f"{word} is NOT a plaindrome!")
+
+#word[::-1] - reverses the string
+#word == word[::-1] - checks if the original string is the same its reversed
+# if its True, then python knows its a palindromne
+```
+## Detecting palindrome numbers ( a number that repeats) 
+```python
+
+n = 12321
+
+if str(n)) == str(n)[::-1]:
+   print(f"{n} is a palindrome!")
+else:
+   print(f"{n} is NOT a palindrome!")
+```
+
+## Remove palindrome from a list 
+```python
+
+words = ["radar", "level", "hello", "world", "deified"]
+
+non_palindromes = [w for w in words if w != w[::-1]]
+print(non_palindromes)
+#keeps only words that are NOT palindromes
+
+Output ['hello', 'word']
+```
+## User input - removing palindromes words dynamically 
+```python
+user_input = input("enter words: ") #asks for user input
+words = user_input.split() #split input into words
+non_palindromes = [w for w in words if w !=w[::-1]] # keep only words that are NOT palindromes
+cleaned_input = " ".join(non_palindromes) #joins them back into a string
+
+print ("input without palindromes: ", cleaned_input)
+```
+## User input - removing palindrome numbers dynamically (numbers separated by space)
+```python
+user_input = input("Enter numbers separated by spaces: ")
+numbers =[int(n) for n in user_input.split()] - split input into list of int
+non_palindromes = [n for n in numbers if str(n) != str(n)[::-1]] - removes palindromes
+print("numbers without palindromes:", non_palindromes)
+```
+## User input - removing palindrome numbers (single digit) 
+```python
+user_input = input("Enter numbers: ")
+numbers = [int(d) for d in user_input] #- each digit becomes a number 
+non_palindromes = [n for n in numbers if str(n) != str(n)[::-1]]
+print("Numbers without palindromes:", non_palindromes)
+
+
+
+
