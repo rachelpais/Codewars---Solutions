@@ -42,7 +42,7 @@ Change or remove text that fits a pattern: Remove extra spaces, censor bad words
 | `[a-z]`| range a to z | matches `"f"` |
 | `[0-9]`| any digit | matches `"7"` |
 | `(abc)`| Group | `(ab)+` matches `"ab"`, `"abab"` |
-| `|`    | OR | `cat|dog` matches `"cat"` or `"dog"` |
+| `vertical bar`    | OR | `cat|dog` matches `"cat"` or `"dog"` |
 
 ## Quantifiers
 | Symbol  | Meaning         | Example                                     |
